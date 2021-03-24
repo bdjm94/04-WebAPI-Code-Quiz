@@ -95,6 +95,13 @@ function saveHighscore() {
             score: time,
             initials: initials
         };
-        
+    highscores.push(newScore);
+    window.localStorage.setItem("highscores", JSON.stringify(highscores));
+    }
+}
+
+function checkForEnter(event) {
+    if (event.key === "Enter") {
+        saveHighscore();
     }
 }
