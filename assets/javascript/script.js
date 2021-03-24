@@ -10,14 +10,15 @@ var currentQuestionNumber = 0;
 var time = questions.length * 15;
 var timerId;
 
-fuction startQuiz() {
+function startQuiz() {
     var startScreenEl = document.getElementById("start-screen");
     startScreenEl.setAttribute("class", "hide");
     questionsEl.removeAttribute("class");
     timerId = setInterval(clockTick, 1000);
     timerEl.textContent = time;
+  
     getQuestion();
-}
+  }
 
 function getQuestion() {
     var currentQuestion = questions[currentQuestionNumber];
@@ -105,6 +106,33 @@ function checkForEnter(event) {
         saveHighscore();
     }
 }
+
+function printHighscores() {
+    var highscores = JSON.parse(window.localStorage.getItem("highscores")) || [];
+    highscores.sort(function(a, b) {
+      return b.score - a.score;
+    });
+
+    highscores.forEach(function(score) {
+        var liTag = document.createElement("li");
+        liTag.textContent = score.initials + " - " + score.score;
+        var olEl = document.getElementById("highscores");
+        olEl.appendChild(liTag);
+    });
+}
+
+function clearHighscores() {
+    window.localStorage.removeItem("highscores");
+    window.location.reload();
+}
+
+document.getElementById("clear").onclick = clearHighscores;
+
+printHighscores();
+
+submitBtn.onclick = saveHighscore;
+startBtn.onclick = startQuiz;
+initialsEl.onkeyup = checkForEnter;
 
 var questions = [
     {
@@ -195,3 +223,5 @@ var questions = [
       answer: "local variable"
     }
   ];
+
+
