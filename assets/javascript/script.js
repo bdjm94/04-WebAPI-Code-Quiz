@@ -33,11 +33,10 @@ currentQuestion.choices.forEach(function(choice, i) {
     choiceButton.setAttribute("class", "choice");
     choiceButton.setAttribute("value", choice);
     choiceButton.textContent = i + 1 + ". " + choice;
-    choiceButton.onClick = questionClick;
+    choiceButton.onclick = questionClick;
     choicesEl.appendChild(choiceButton);
 });
 }
-
 function questionClick() {
     if (this.value !== questions[currentQuestionNumber].answer) {
         time -= 5;
