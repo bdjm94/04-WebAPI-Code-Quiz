@@ -85,3 +85,16 @@ function clockTick() {
         quizEnd();
     }
 }
+
+function saveHighscore() {
+    var initials = initialsEl.value.trim();
+    if (initials !== "") {
+        var highscores = 
+        JSON.parse(window.localStorage.getItem("highscores")) || [];
+        var newScore = {
+            score: time,
+            initials: initials
+        };
+        
+    }
+}
