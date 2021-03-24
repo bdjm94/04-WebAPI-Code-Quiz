@@ -107,6 +107,10 @@ function checkForEnter(event) {
     }
 }
 
+submitBtn.onclick = saveHighscore;
+startBtn.onclick = startQuiz;
+initialsEl.onkeyup = checkForEnter;
+
 function printHighscores() {
     var highscores = JSON.parse(window.localStorage.getItem("highscores")) || [];
     highscores.sort(function(a, b) {
@@ -130,9 +134,7 @@ document.getElementById("clear").onclick = clearHighscores;
 
 printHighscores();
 
-submitBtn.onclick = saveHighscore;
-startBtn.onclick = startQuiz;
-initialsEl.onkeyup = checkForEnter;
+
 
 var questions = [
     {
