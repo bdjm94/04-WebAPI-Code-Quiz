@@ -7,7 +7,7 @@ var initialsEl = document.querySelector("#initials");
 var feedbackEl = document.querySelector("#feedback");
 
 var currentQuestionNumber = 0;
-var time = questions.length * 15;
+var time = questions.length * 5;
 var timerId;
 
 function startQuiz() {
@@ -40,7 +40,7 @@ currentQuestion.choices.forEach(function(choice, i) {
 
 function questionClick() {
     if (this.value !== questions[currentQuestionNumber].answer) {
-        time -= 10;
+        time -= 5;
 
         if(time < 0) {
             time = 0;
