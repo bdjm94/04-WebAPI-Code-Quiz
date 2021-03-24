@@ -65,3 +65,15 @@ function questionClick() {
         getQuestion();
     }
 }
+
+function quizEnd() {
+    clearInterval(timerId);
+
+    var endScreenEl = document.getElementById("end-screen");
+    endScreenEl.removeAttribute("class");
+
+    var finalScoreEl = document.getElementById("final-score");
+    finalScoreEl.textContent = time;
+
+    questionsEl.setAttribute("class", "hide");
+}
