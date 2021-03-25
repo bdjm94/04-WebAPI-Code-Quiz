@@ -19,7 +19,7 @@ End of the quiz showing you your score and telling you to enter your initials to
 ![Quiz End](./assets/images/Quiz-End.JPG)
 
 Picture of the highscores page showing you the current highscores and who they belong to. Also has the option to go back to the home page of the quiz or to clear all the highscores from the highscores page
-![Highscores](./assets/images/Highscores-page.JPG)
+![Highscores](./assets/images/Highscores-Page.JPG)
 
 ## Code Quiz in Action
 Here is a gif on the full funcitonality of the code quiz. Shows the timer decreasing for every incorrect answer. Also shows the functionality of the clear highscores button.
