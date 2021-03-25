@@ -15,7 +15,8 @@ A snippet of how the Multiple Choice Questions are laid out as well as the text 
 ![Correct Answer](./assets/images/Correct.png)
 ![Incorrect Answer](./assets/images/Incorrect.png)
 
-End of the quiz showing you your score and telling you to enter your initials to submit the score to the highscores page
+End of the quiz showing you your score and telling you to enter your initials to submit the score to the highscores
+
 ![Quiz End](./assets/images/Quiz-End.JPG)
 
 Picture of the highscores page showing you the current highscores and who they belong to. Also has the option to go back to the home page of the quiz or to clear all the highscores from the highscores page
