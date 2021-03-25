@@ -12,8 +12,8 @@ Main page of the quiz showing the intro message as well as the "View Highscores"
 
 A snippet of how the Multiple Choice Questions are laid out as well as the text that appears if you get the answer correct or incorrect
 ![MCQs](./assets/images/MCQ.JPG)
-![Correct Answer](./assets/images/Correct.PNG)
-![Incorrect Answer](./assets/images/Incorrect.PNG)
+![Correct Answer](./assets/images/Correct.png)
+![Incorrect Answer](./assets/images/Incorrect.png)
 
 End of the quiz showing you your score and telling you to enter your initials to submit the score to the highscores page
 ![Quiz End](./assets/images/Quiz-End.JPG)
